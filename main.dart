@@ -1,19 +1,20 @@
-import 'package:audioplayers/audio_cache.dart';
-import 'package:audioplayers/audioplayers.dart';
+import 'package:audioplayers/audio_cache.dart';                                        // This is needed for AudioPlayer.
+import 'package:audioplayers/audioplayers.dart';                                       // This is needed for AudioPlayer.
 import 'package:flutter/material.dart';
 
 typedef void OnError(Exception exception);
 
 class Blank extends StatelessWidget {
-  static AudioPlayer advancedPlayer;
-  static AudioCache audioCache;
-  static String vTitle = 'My First App';
+  static AudioPlayer advancedPlayer = new AudioPlayer();                               // This is needed for AudioPlayer.
+  static AudioCache audioCache= new AudioCache(fixedPlayer: advancedPlayer);           // This is needed for AudioPlayer.
+  static AudioPlayer audioPlayer = AudioPlayer();                                      // This is needed for AudioPlayer.
+  static String vTitle = 'My Audio app';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(Blank.vTitle),
+        title: Text(vTitle),
         centerTitle: true,
         backgroundColor: Colors.red,
       ),
@@ -21,9 +22,7 @@ class Blank extends StatelessWidget {
         children: <Widget>[
           RaisedButton(
             onPressed: () {
-              Blank.advancedPlayer = new AudioPlayer();
-              Blank.audioCache = new AudioCache(fixedPlayer: Blank.advancedPlayer);
-              Blank.audioCache.play('endtest.wav');
+              Blank.audioCache.play('test.wav');                                       // This is needed for AudioPlayer.
             },
           ),
         ],
@@ -33,7 +32,5 @@ class Blank extends StatelessWidget {
 }
 
 void main() {
-  //myAudio();
-  runApp(new MaterialApp(debugShowCheckedModeBanner: false,home:  Blank()));
-
+    runApp(new MaterialApp(debugShowCheckedModeBanner: false,home:  Blank()));
 }
