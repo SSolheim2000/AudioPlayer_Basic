@@ -21,6 +21,7 @@ You will also have to add the "assets: section:
 
 # Import the code and audio file
 Either import the code into your project or copy and paste it into the "main.dart" file.
+
 You'll need to create a folder called "assets" and place your audio file in that folder.
 
 
@@ -38,6 +39,8 @@ There is only about 6 lines of code that you will need:
 ```
 
 You'll notice that my variables start with "static". This is so I can call the audioplayer from any location within my code.
+
 The AudioPlayers is hardcoded to look for your files in a folder called "assets".
+
 Filenames are Case Sensative.
 
