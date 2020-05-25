@@ -2,7 +2,8 @@
 Just the bare minimum to play Audio on Flutter.
 
 # Setup your computer
-If you haven't already setup your computer to use Flutter, I followed these instructions: 
+If you haven't already setup your computer to use Flutter, I followed these instructions:
+
 https://www.youtube.com/watch?v=GLSG_Wh_YWc
 
 # Setup your pubspec.yaml file
