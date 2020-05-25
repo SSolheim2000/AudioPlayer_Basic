@@ -1,6 +1,14 @@
 # AudioPlayer_Basic
 Just the bare minimum to play Audio on Flutter.
 
+I had a real hard time trying to figure out how to play audio on Flutter. Everything I tried seemed super bloated and I wanted something simple that would just play sound clips. After hours of troubleshooting, I was able to wittle it down to a handful of lines.
+
+If you want to see the original project with all of its features, check them out here: https://pub.dev/packages/audioplayers
+
+If you find my example helpful, consider a $10 donation to TeamSolheim: https://www.teamsolheim.org/give
+
+I hope you are able to easily incorporate this code into your project.  God Bless
+
 # Setup your computer
 If you haven't already setup your computer to use Flutter, I followed these instructions:
 
